@@ -1,0 +1,35 @@
+$font-family-base: "Poppins", sans-serif;
+
+$bg-color: #efefef;
+$primary-color: #1876f2;
+$secondary-color: #cbdffa;
+$online-color: #41db51;
+$gray-color: #626262;
+$medium-lightgray-color: #9a9a9a;
+
+$display: flex;
+$align-items: center;
+
+@mixin display($display, $align-items) {
+  display: $display;
+  align-items: $align-items;
+}
+
+@mixin nav-icon() {
+  width: 28px;
+  margin: 0 15px;
+}
+
+@mixin sidebar() {
+  flex-basis: 25%; /* the initial size of a flex item along the main axis to be 25% of the available space */
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+}
+
+@mixin links-left() {
+  @include display($display, $align-items);
+  margin-bottom: 30px;
+  color: $gray-color;
+  width: fit-content;
+}

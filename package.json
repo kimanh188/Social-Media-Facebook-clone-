@@ -1,0 +1,26 @@
+{
+  "name": "socialbook",
+  "version": "1.0.0",
+  "description": "Facebook clone, social media",
+  "main": "index.js",
+  "scripts": {
+    "compile": " sass src/sass/socialbook.styles.scss src/css/socialbook.styles.css --no-source-map --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimanh188/SocialBook.git"
+  },
+  "keywords": [
+    "social",
+    "media",
+    "facebook",
+    "clone",
+    "socialbook"
+  ],
+  "author": "Kim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimanh188/SocialBook/issues"
+  },
+  "homepage": "https://github.com/kimanh188/SocialBook#readme"
+}
