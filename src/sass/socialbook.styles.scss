@@ -33,7 +33,7 @@ nav {
     align-items: center;
 
     .search-box {
-      background-color: white;
+      background-color: transparent;
       width: 22rem;
       border-radius: 1.25rem;
       @include display($display, $align-items);
