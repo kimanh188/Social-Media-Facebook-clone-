@@ -8,9 +8,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #efefef;
+  --primary-color: #1876f2;
+  --post-bg-color: #fff;
+}
+
+.dark-theme {
+  --bg-color: #0a0a0a;
+  --primary-color: #000;
+  --post-bg-color: #000;
+}
+
 body {
   font-family: $font-family-base;
-  background-color: $bg-color;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s;
 }
 
 a {

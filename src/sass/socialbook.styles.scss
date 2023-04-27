@@ -7,7 +7,7 @@ nav {
   width: 100vw;
   position: fixed;
   top: 0;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   padding: 5px 5%;
   z-index: 100;
 
@@ -86,7 +86,7 @@ nav {
   right: 5%;
   width: 90%;
   max-width: 350px;
-  background-color: white;
+  background-color: var(--post-bg-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   overflow: hidden;
@@ -123,8 +123,36 @@ nav {
   }
 }
 
+/* for JS */
 .settings-menu-height {
   max-height: 450px;
+}
+
+#dark-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  display: flex;
+  background-color: silver;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  span {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
+/* for JS */
+#dark-btn.dark-btn-on {
+  padding-left: 23px;
+  background-color: var(--bg-color);
 }
 
 .user-profile {
@@ -200,7 +228,7 @@ main .container {
   }
 
   .right-sidebar {
-    background-color: white;
+    background-color: var(--post-bg-color);
     color: $gray-color;
     border-radius: 4px;
     padding: 20px;
@@ -356,7 +384,7 @@ main .container {
 
     .write-post-container {
       width: 100%;
-      background-color: white;
+      background-color: var(--post-bg-color);
       border-radius: 6px;
       padding: 20px;
       color: $gray-color;
@@ -397,7 +425,7 @@ main .container {
       width: 100%;
       padding: 20px;
       margin: 20px 0;
-      background-color: white;
+      background-color: var(--post-bg-color);
       color: $gray-color;
       border-radius: 6px;
 
