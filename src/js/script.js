@@ -8,6 +8,12 @@ function settingsMenuToggle() {
 darkBtn.onclick = function () {
   darkBtn.classList.toggle("dark-btn-on");
   document.body.classList.toggle("dark-theme");
+
+  if (localStorage.getItem("theme") == "light") {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
 };
 
 /* if theme is light, button dark/light should be off and dark-theme should be off. And vice versa (else if). Else: create light theme when user visit website the first time : */
