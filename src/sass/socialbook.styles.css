@@ -53,20 +53,16 @@ nav .nav-left .logo {
 nav .nav-left ul li {
   display: inline-block;
 }
-nav .nav-left .nav-icon {
+nav .nav-left img {
   width: 28px;
   margin: 0 15px;
-  transition: 0.5s ease;
-}
-nav .nav-left .nav-icon:hover {
-  transform: scale(1.2);
 }
 nav .nav-right {
   display: flex;
   align-items: center;
 }
 nav .nav-right .search-box {
-  background-color: var(--bg-color);
+  background-color: transparent;
   width: 22rem;
   border-radius: 1.25rem;
   display: flex;
@@ -218,12 +214,10 @@ main .container .left-sidebar .key-links {
 main .container .left-sidebar .key-links a {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
   color: #626262;
-  padding: 1em;
-}
-main .container .left-sidebar .key-links a:hover {
-  background-color: lightgray;
-  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 main .container .left-sidebar .key-links a:last-child {
   color: #1876f2;
@@ -235,16 +229,15 @@ main .container .left-sidebar .key-links a img {
 main .container .left-sidebar .shortcut-links a {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
   color: #626262;
-  padding: 1em;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 main .container .left-sidebar .shortcut-links a img {
   width: 2.5rem;
   border-radius: 4px;
   margin-right: 15px;
-}
-main .container .left-sidebar .shortcut-links a:hover {
-  text-decoration: underline;
 }
 main .container .left-sidebar .shortcut-links p {
   margin: 1.5625rem 0;
@@ -261,7 +254,7 @@ main .container .right-sidebar .sidebar-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 18px;
 }
 main .container .right-sidebar .sidebar-title a {
   color: #1876f2;
@@ -299,9 +292,6 @@ main .container .right-sidebar .event .left-event span {
 }
 main .container .right-sidebar .event a {
   color: #1876f2;
-}
-main .container .right-sidebar .event a:hover {
-  text-decoration: underline;
 }
 main .container .right-sidebar .sidebar-ads {
   width: 100%;
@@ -361,8 +351,7 @@ main .container .main-content .story-container .story p {
   font-size: 14px;
 }
 main .container .main-content .story-container .story-1 {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/profile-pic.jpeg);
-  background-position: center;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-1.png);
 }
 main .container .main-content .story-container .story-1 img {
   top: unset;
@@ -373,16 +362,16 @@ main .container .main-content .story-container .story-1 img {
   width: 35px;
 }
 main .container .main-content .story-container .story-2 {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-2.webp);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-2.png);
 }
 main .container .main-content .story-container .story-3 {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-3.jpeg);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-3.png);
 }
 main .container .main-content .story-container .story-4 {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-4.jpeg);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-4.png);
 }
 main .container .main-content .story-container .story-5 {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-5.webp);
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url(../../images/status-5.png);
 }
 main .container .main-content .write-post-container {
   width: 100%;
@@ -431,7 +420,7 @@ main .container .main-content .post-container .user-profile span {
   color: #9a9a9a;
 }
 main .container .main-content .post-container .post-text {
-  color: #626262;
+  color: #9a9a9a;
   margin: 15px 0;
   font-size: 15px;
 }
@@ -496,4 +485,4 @@ footer div {
   color: #9a9a9a;
   padding: 1em;
   font-size: 13px;
-}
+}/*# sourceMappingURL=socialbook.styles.css.map */

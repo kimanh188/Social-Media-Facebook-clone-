@@ -23,7 +23,7 @@ nav {
       display: inline-block;
     }
 
-    img {
+    .nav-icon {
       @include nav-icon();
     }
   }
@@ -33,7 +33,7 @@ nav {
     align-items: center;
 
     .search-box {
-      background-color: transparent;
+      background-color: var(--bg-color);
       width: 22rem;
       border-radius: 1.25rem;
       @include display($display, $align-items);
@@ -197,6 +197,11 @@ main .container {
       a {
         @include links-left();
 
+        &:hover {
+          background-color: lightgray;
+          border-radius: 8px;
+        }
+
         &:last-child {
           color: $primary-color;
         }
@@ -217,6 +222,10 @@ main .container {
           border-radius: 4px;
           margin-right: 15px;
         }
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       p {
@@ -236,7 +245,7 @@ main .container {
     .sidebar-title {
       @include display($display, $align-items);
       justify-content: space-between;
-      margin-bottom: 18px;
+      margin-bottom: 2rem;
 
       a {
         color: $primary-color;
@@ -278,6 +287,10 @@ main .container {
 
       a {
         color: $primary-color;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -349,7 +362,8 @@ main .container {
 
       .story-1 {
         background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-          url(../../images/status-1.png);
+          url(../../images/profile-pic.jpeg);
+        background-position: center;
 
         img {
           top: unset;
@@ -363,22 +377,22 @@ main .container {
 
       .story-2 {
         background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-          url(../../images/status-2.png);
+          url(../../images/status-2.webp);
       }
 
       .story-3 {
         background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-          url(../../images/status-3.png);
+          url(../../images/status-3.jpeg);
       }
 
       .story-4 {
         background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-          url(../../images/status-4.png);
+          url(../../images/status-4.jpeg);
       }
 
       .story-5 {
         background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)),
-          url(../../images/status-5.png);
+          url(../../images/status-5.webp);
       }
     }
 
@@ -435,7 +449,7 @@ main .container {
       }
 
       .post-text {
-        color: $medium-lightgray-color;
+        color: $gray-color;
         margin: 15px 0;
         font-size: 15px;
 
