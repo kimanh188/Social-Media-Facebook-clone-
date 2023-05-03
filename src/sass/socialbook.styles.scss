@@ -218,7 +218,8 @@ main .container {
         @include links-left();
 
         img {
-          width: 2.5rem;
+          width: 4rem;
+          height: 3rem;
           border-radius: 4px;
           margin-right: 15px;
         }
@@ -242,10 +243,15 @@ main .container {
     border-radius: 4px;
     padding: 20px;
 
+    .events-container,
+    .ads-manager-container {
+      margin-bottom: 2.5em;
+    }
+
     .sidebar-title {
       @include display($display, $align-items);
       justify-content: space-between;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
 
       a {
         color: $primary-color;
