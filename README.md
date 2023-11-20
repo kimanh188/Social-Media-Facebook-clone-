@@ -8,7 +8,7 @@ This project serves as a personal sandbox for honing my HTML, CSS (with Sass), a
 
 - **HTML & CSS Mastery**: Practice and refine skills in structuring web content and styling it effectively, incorporating Sass.
 - **Sass Implementation**: Explore the power of Sass for more maintainable and modular stylesheets.
-- **Introduction to JavaScript**: Develop fundamental JavaScript skills through the creation of a theme toggle feature.
+- **Introduction to JavaScript**: Develop fundamental JavaScript skills through the creation of a theme toggle feature (accessible when clicking the profile icon at the top right of the navbar).
 
 ## Tutorial Source
 
