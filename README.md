@@ -2,6 +2,8 @@
 
 This project serves as a personal sandbox for honing my HTML, CSS (with Sass), and JavaScript skills as I embark on my web development journey. Over the span of 2.5 months, I've dedicated time to building foundational concepts and implementing practical elements.
 
+[Live Site](https://social-book-sepia.vercel.app/)
+
 ## Learning Objectives
 
 - **HTML & CSS Mastery**: Practice and refine skills in structuring web content and styling it effectively, incorporating Sass.
